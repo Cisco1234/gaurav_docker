@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-
+USER 0
 RUN sudo apt-get update && apt-get install -y openssh-server
 RUN sudo mkdir /var/run/sshd
 RUN sudo echo 'root:screencast' | chpasswd
